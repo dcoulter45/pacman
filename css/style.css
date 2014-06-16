@@ -1,0 +1,119 @@
+
+@font-face {
+	font-family: 'visitor';
+	src: url('fonts/visitor2-webfont.eot');
+	src: url('fonts/visitor2-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/visitor2-webfont.woff') format('woff'),
+		 url('fonts/visitor2-webfont.ttf') format('truetype'),
+		 url('fonts/visitor2-webfont.svg#visitor_tt2_brkregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+
+	background: url(../img/site/bg.png) no-repeat fixed;
+	background-position: center 0;
+	height: 100%;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#container{
+
+	position: relative;
+	width: 550px;
+	height: 680px;
+	margin: 0 auto;
+}
+
+#logo{
+	
+	margin-left: 8px;
+}
+
+#canvas{
+	
+	margin-left: 53px;
+	image-rendering: optimizeSpeed;             // Older versions of FF
+	image-rendering: -moz-crisp-edges;          // FF 6.0+
+	image-rendering: -webkit-optimize-contrast; // Webkit
+												//  (Safari now, Chrome soon)
+	image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+	image-rendering: optimize-contrast;         // Possible future browsers.
+	-ms-interpolation-mode: nearest-neighbor;   // IE
+}
+
+#overlay{
+
+	position: absolute;
+	background: #000;
+	width: 448px;
+	height: 504px;
+	margin-left: 53px;
+	top: 155px;	
+}
+
+#play{
+
+	position: absolute;
+	background: url(../img/site/play.png) no-repeat;
+	width: 155px;
+	height: 67px;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto;
+	cursor: pointer;
+}
+
+#play:active{
+	background-position: -155px 0;
+}
+
+#hud{
+
+	position: absolute;
+	top: 165px;
+	left: -200px;
+	font: 100 36px 'visitor';
+	color: #fff;
+	line-height: 40px;
+}
+
+#volume{
+	width: 220px;
+	margin-top: 5px;
+}
+
+#up, #down{
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.bar{
+
+	display: block;
+	float: left;
+	background: #fff;
+	width: 14px;
+	height: 3px;
+	margin: 0 12px 0 0;
+	opacity: 0.3;
+}
+
+#pacman{
+
+	margin: 150px 0 0 50px;
+}
+
+#shadow{
+
+	background: url(../img/site/shadow.png) no-repeat;
+	width: 533px;
+	height: 177px;
+	margin-top: -57px;
+}

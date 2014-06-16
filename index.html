@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pacman </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div id="container">
+
+		<img id="logo" src="img/site/logo.png" alt="logo"/>
+		
+		<canvas id="canvas" width="448" height="504" autofocus="autofocus">  </canvas>
+
+		<div id="overlay">
+			<div id="play"></div>
+		</div>
+		
+		<div id="hud">
+			Hi-Score: <span id="hiscore">0</span> <br/>
+			Score:    <span id="score">0</span> <br/>
+			Lives:    <span id="lives">3</span> <br/>
+			Volume:   <span id="down">-</span> <span id="up">+</span>
+			<div id="volume">
+				<figure class="bar active"></figure>
+				<figure class="bar active"></figure>
+				<figure class="bar active"></figure>
+				<figure class="bar active"></figure>
+				<figure class="bar active"></figure>
+				<figure class="bar"></figure>
+				<figure class="bar"></figure>
+				<figure class="bar"></figure>
+			</div>
+			<img id="pacman" src="img/site/pacman.png" alt="pacman"/>
+		</div>
+
+		<div id="shadow"></div>
+
+	</div>
+	
+
+	<script src="js/SeamlessLoop.js"></script>
+	<script src="js/sounds.js"></script>
+	<script src="js/objects.js"></script>
+	<script src="js/level.js"></script>
+	<script src="js/game.js"></script>
+
+</body>
+</html>
