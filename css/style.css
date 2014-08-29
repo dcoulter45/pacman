@@ -15,7 +15,6 @@ body{
 	background: url(../img/site/bg.png) no-repeat fixed;
 	background-position: center 0;
 	height: 100%;
-	overflow: hidden;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
